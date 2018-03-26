@@ -8,6 +8,6 @@ public class MainController {
 
     @RequestMapping("/")
     public String homepage(){
-        return "homepage";
+        return "ng-template";
     }
 }

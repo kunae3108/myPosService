@@ -7,6 +7,14 @@
     <groupId>myPosService</groupId>
     <artifactId>myPosService</artifactId>
     <version>1.0</version>
+    
+    
+	<properties>
+		<jstl-version>1.2</jstl-version>
+		<jsp-version>2.2</jsp-version>
+		<sitemesh-version>2.4.2</sitemesh-version>
+	</properties>
+
 
     <dependencies>
         <dependency>
@@ -37,6 +45,41 @@
             <version>3.1.0</version>
             <scope>provided</scope>
         </dependency>
+        
+        <!-- servlet jstl -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${jstl-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>${jsp-version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- JSTL Dependency -->
+		<dependency>
+			<groupId>javax.servlet.jsp.jstl</groupId>
+			<artifactId>javax.servlet.jsp.jstl-api</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+		
+		<!-- sitemesh -->
+		<dependency>
+			<groupId>opensymphony</groupId>
+			<artifactId>sitemesh</artifactId>
+			<version>${sitemesh-version}</version>
+		</dependency>
+		
     </dependencies>
 
     <build>
